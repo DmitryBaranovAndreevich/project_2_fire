@@ -1,0 +1,62 @@
+.sectionTitle {
+  background: url('../../images/kamin.svg') no-repeat right/700px 429px;
+  text-align: start;
+  padding: 10px 0 100px;
+
+  &__title {
+    @include font-source-sans(64px, $textColorDark1, 250, 80px);
+    @include gradient(bottom, $gradientColor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    max-width: 780px;
+    margin: 0;
+  }
+
+  &__price {
+    @include font-source-sans(36px, $textColorActive, thin, 40px);
+    letter-spacing: 2px;
+    margin: 30px 0 0 0;
+  }
+
+  &__container {
+    @include flex;
+    margin-top: 86px;
+    justify-content: flex-start;
+    gap: 80px;
+  }
+
+  &__firstIcon {
+    @include font-source-sans(14px, $colorLight, regular, 22px);
+    position: relative;
+    max-width: 91px;
+    text-align: center;
+
+    &:after {
+      position: absolute;
+      top: -50px;
+      right: 33px;
+      content: '';
+      background: url("../../images/icon1.svg") no-repeat center/cover;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__secondtIcon {
+    @include font-source-sans(14px, $colorLight, regular, 22px);
+    position: relative;
+    max-width: 120px;
+    text-align: center;
+
+     &:after {
+      position: absolute;
+      top: -50px;
+      right: 33px;
+      content: '';
+      background: url("../../images/icon2.svg") no-repeat center/cover;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

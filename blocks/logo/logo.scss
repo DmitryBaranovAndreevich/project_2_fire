@@ -1,0 +1,5 @@
+.logo {
+  color: $colorLight;
+  @include font-source-sans(20px, $colorLight, 400, 70px);
+  letter-spacing: 2px;
+}

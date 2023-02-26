@@ -1,35 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="shortcut icon" type="image/png" href="./www.png" />
-    <!--shortcut icon downloaded from: https://uxwing.com/www-icon/ -->
-    <title>My Document</title>
-  </head>
 
-  <body>
-    <div id="bodyDiv">
-      <div id="headerDiv">
-        <header>
-          <h1>This is h1 styled title of document</h1>
-        </header>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./pages/index.css" />
+  <link rel="shortcut icon" type="image/png" href="./www.png" />
+  <title>Elite fire</title>
+</head>
 
-      <div id="mainDiv">
-        <main>
-          <div>
-            <p>This is paragraph element of document</p>
-          </div>
-        </main>
-      </div>
-
-      <div id="footerDiv">
-        <footer id="pageFooter">This is footer element of document</footer>
-      </div>
+<body>
+  <div class="bodyDiv">
+    <div class="headerDiv">
+      <header class="headerDiv__header">
+        <div class="headerDiv__container">
+          <p class="logo">Elite Fire</p>
+          <p class="headerDiv__text">Автоматические
+            биокамины</p>
+        </div>
+        <div class="headerDiv__container">
+          <ul class="headerDiv__links">
+            <li class="headerDiv__link">Продукция</li>
+            <li class="headerDiv__link">Конструктор</li>
+            <li class="headerDiv__link">Опыт</li>
+            <li class="headerDiv__link">Контакты</li>
+          </ul>
+          <button class="headerDiv__button"></button>
+        </div>
+      </header>
     </div>
 
-    <script src="scripts/index.js"></script>
-  </body>
+    <div class="mainDiv">
+      <main>
+        <section class="sectionTitle">
+          <h1 class="sectionTitle__title">Автоматические
+            биокамины
+          </h1>
+          <p class="sectionTitle__price">от 99 000₽</p>
+          <div class="sectionTitle__container">
+            <p class="sectionTitle__firstIcon">Свое
+              производство</p>
+            <p class="sectionTitle__secondtIcon">Доставка в любую
+              точку мира</p>
+          </div>
+        </section>
+        <section class="mainFireplace">
+          <h3 class="mainFireplace__title">Настоящий высокий огонь
+            у вас дома</h3>
+          <p class="mainFireplace__description">Благодаря специальной технологии горения биоэтанола
+            мы добились горения потрясающей красоты</p>
+          <img src="./images/kamin2.png" alt="Fireplace" class="mainFireplace__fire">
+          <div class="mainFireplace__container">
+            <p class="mainFireplace__icon mainFireplace__icon_firsticon">Пламя яркое, высотой
+              до 20 сантиметров</p>
+            <p class="mainFireplace__icon mainFireplace__icon_secondicon">Работает такой камин
+              на биотопливе
+            </p>
+            <p class="mainFireplace__icon mainFireplace__icon_thirdicon">Он не дымит и не пахнет</p>
+          </div>
+        </section>
+        <section class="sectionFuel">
+          <h3 class="sectionFuel__title">заправка</h3>
+          <p class="sectionFuel__description sectionFuel__description_first">Внутри не просто труба. Спроектированный
+            нами бак, самого большого обьема среди всех производителей</p>
+          <p class="sectionFuel__description sectionFuel__description_swcond">В наши топливные блоки встроен мощный
+            насос.</p>
+          <p class="sectionFuel__description sectionFuel__description_third">Достаточно вставить шланг
+            Нажать кнопку</p>
+        </section>
+        <section class="smartFirePlace">
+          <h3 class="smartFirePlace__title">Умный камин - очень умный</h3>
+          <p class="smartFirePlace__description">Даже если у Вас нет своего решения по умному дому.
+            Мы отлично ладим с Яндекс.Алиса и Mi Home.</p>
+          <img src="./images/smartKamin.png" alt="smart fireplace" class="smartFirePlace__image">
+        </section>
+        <section class="description">
+          <div class="description__column">
+            <p class="description__title">Топливный блок</p>
+            <img src="./images/kamin3.png" alt="fireplace description" class="description__image">
+            <p class="description__subtitle">Варианты отделки</p>
+            <ul class="description__list">
+              <li class="description__elem">черный</li>
+              <li class="description__elem">матовый</li>
+              <li class="description__elem">шлифованная</li>
+              <li class="description__elem">сталь</li>
+            </ul>
+            <p class="description__subtitle description__subtitle_bigMargin">Стандартная комплектация</p>
+            <ul class="description__list description__list_bigHeight">
+              <li class="description__elem">Управление с кнопок</li>
+              <li class="description__elem">С помощью пульта</li>
+              <li class="description__elem">Умный дом</li>
+              <li class="description__elem">Без шумность</li>
+              <li class="description__elem">Датчик С02</li>
+              <li class="description__elem">Датчик пролива</li>
+              <li class="description__elem">Датчик температуры</li>
+              <li class="description__elem">Датчик наклона</li>
+              <li class="description__elem">Дисплей</li>
+              <li class="description__elem">Индикатор уровня топлива</li>
+              <li class="description__elem">Блокировка залива топлива</li>
+              <li class="description__elem">Кнопка отключения от сети на лицевой панели</li>
+            </ul>
+            <p class="description__title description__title_bigMargin">Готовые решения</p>
+            <p class="description__text description__text_smallMargin">Напольные отдельно стоящие камины.</p>
+            <p class="description__text description__text_smallMargin">Настенные очаги которые вешаются как ТВ.
+              Подвесные модели.</p>
+            <div class="description__video description__video_bigMargin">
+              <div class="description__buttonContainer">
+                <button class="description__button">&#8249;</button>
+                <button class="description__button">&#8250;</button>
+              </div>
+            </div>
+          </div>
+          <div class="description__column">
+            <p class="description__title">Очаги для встраивания в нишу
+              по Вашим размерам</p>
+            <p class="description__text">Короб выполненый из нержавеющей стали 2 мм или холоднокатанной стали 3 мм
+              Окрашен кремнийорганической и акриловой
+              краской
+              Каждый комплектуется керамическим матом
+              Лучшая теплоизолированость из доступных
+              Изготавливается исключительно под Ваши размеры
+              Наши технологи спроектируют техническое задание для ниши учитывая
+              особенности Вашего ремонта.
+              Размер ограничен только Вашей фантазией
+              Отделка стемалитом и цветными металлами</p>
+            <div class="description__video">
+              <div class="description__buttonContainer">
+                <button class="description__button">&#8249;</button>
+                <button class="description__button">&#8250;</button>
+              </div>
+            </div>
+            <p class="description__title description__title_bigMargin">Готовые решения</p>
+            <p class="description__text description__text_smallMargin">Напольные отдельно стоящие камины.</p>
+            <p class="description__text description__text_smallMargin">Настенные очаги которые вешаются как ТВ.
+              Подвесные модели.</p>
+            <div class="description__video description__video_bigMargin">
+              <div class="description__buttonContainer">
+                <button class="description__button">&#8249;</button>
+                <button class="description__button">&#8250;</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sectionVideo">
+          <p class="sectionVideo__title">Получите каталог с моделями и ценами на всю нашу продукцию</p>
+          <button class="sectionVideo__mainButton">Получить каталог!</button>
+          <p class="sectionVideo__subTitle">Есть задача? Есть решение!</p>
+          <div class="sectionVideo__container">
+            <div class="sectionVideo__video"></div>
+            <div class="sectionVideo__video"></div>
+            <div class="sectionVideo__video"></div>
+          </div>
+          <p class="sectionVideo__subTitle sectionVideo__subTitle_noMarginBottom">Почемы мы можем многое?</p>
+          <p class="sectionVideo__subTitle sectionVideo__subTitle_noMarginTop">Свои люди. Свои станки. Своя лаборатория</p>
+          <div class="sectionVideo__container">
+            <div class="sectionVideo__video"></div>
+            <div class="sectionVideo__video"></div>
+            <div class="sectionVideo__video"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="footerDiv">
+      <!-- <footer id="pageFooter">This is footer element of document</footer> -->
+    </div>
+  </div>
+
+</body>
+
 </html>

@@ -1,0 +1,41 @@
+.sectionFuel {
+  padding: 100px;
+  background: url("../../images/img1.png") no-repeat right/ 600px 650px;
+  text-align: start;
+
+  &__title {
+    @include font-source-sans(40px, $colorLight, 250, 55px);
+    @include gradient(left, $gradientColor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+  }
+
+  &__description {
+    max-width: 370px;
+    @include font-source-sans(18px, $colorLight, 300, 33px);
+
+    &_first {
+      margin: 23px 0 0 0;
+    }
+
+    &_second {
+      margin: 23px 0 0 0;
+    }
+
+    &_third {
+      display: flex;
+      flex-direction: column-reverse;
+      max-width: 234px;
+      margin: 90px auto 0;
+      gap: 10px;
+
+      &:after {
+        content: "";
+        width: 165px;
+        height: 30px;
+        background: url("../../images/tandem.svg") no-repeat center/cover;
+      }
+    }
+  }
+}

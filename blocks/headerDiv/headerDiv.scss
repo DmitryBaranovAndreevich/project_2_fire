@@ -1,0 +1,64 @@
+.headerDiv {
+  max-width: $max-width;
+  width: 100%;
+  padding: 76px 0;
+  margin: 0 auto;
+  color: $colorLight;
+
+  &__header {
+    @include flex;
+    justify-content: space-between;
+  }
+
+  &__container {
+    @include flex;
+    gap: 39px;
+  }
+
+  &__text {
+     @include font-source-sans(12px, $textColorDark1, regular, 18px);
+     max-width: 99px;
+  }
+
+  &__links {
+    @include flex;
+    @include noDotNoMargin;
+  }
+
+  &__links {
+    gap: 39px;
+    @include font-source-sans(13px, $textColorDark2, regular, 16px);
+  }
+
+  &__link {
+    @include mainTransition;
+
+    &:hover {
+      opacity: $contentOpacity;
+      color: $textColorActive;
+    }
+  }
+
+  &__button {
+    @include flex;
+    @include mainTransition;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 2px;
+    background: $textColorActive;
+
+    &:after {
+      content: '';
+      width: 17px;
+      height: 17px;
+      background: url("../../images/phone.svg") no-repeat center/cover;
+    }
+
+    &:hover {
+      opacity: $contentOpacity;
+    }
+  }
+}

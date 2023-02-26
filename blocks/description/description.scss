@@ -1,0 +1,86 @@
+.description {
+  @include flex;
+  gap: 124px;
+
+  &__column {
+    max-width: 45%;
+    text-align: start;
+  }
+
+  &__title {
+    @include font-source-sans(24px, $colorLight, 400, 36px);
+    margin: 20px 0 0 0;
+
+    &_bigMargin {
+      margin: 90px 0 40px;
+    }
+  }
+
+  &__image {
+    max-width: 571px;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  &__text {
+    @include font-source-sans(14px, $colorLight, 400, 22px);
+    margin: 30px 0 40px 0;
+
+    &_smallMargin {
+      margin: 5px 0;
+    }
+  }
+
+  &__subtitle {
+    @include font-source-sans(18px, $backgroundColorDark, 400, 27px);
+    margin: 35px 0 0 0;
+
+    &_bigMargin {
+      margin-top: 40px;
+    }
+  }
+
+  &__list {
+    @include flex;
+    @include noDotNoMargin;
+    flex-direction: column;
+    max-height: 100px;
+    max-width: 400px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0;
+
+    &_bigHeight {
+      max-height: 250px;
+      max-width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  &__elem {
+    @include font-source-sans(14px, $colorLight, 400, 36px);
+  }
+
+  &__video {
+    @include responsive-ratio(537px, 346px, true);
+    background: $mainVideoColor;
+
+    &_bigMargin {
+      margin-top: 60px;
+    }
+  }
+
+  &__button {
+    @include mainTransition;
+    width: 10px;
+    height: 28px;
+    color: $textColorActive;
+    border: none;
+    background: none;
+    font-size: 34px;
+
+    &:hover {
+      opacity: $contentOpacity;
+    }
+  }
+}

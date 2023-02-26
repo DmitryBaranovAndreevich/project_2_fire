@@ -1,0 +1,69 @@
+.mainFireplace {
+  padding: 100px 0 0;
+
+  &__title {
+    @include font-source-sans(40px, $textColorDark1, 250, 60px);
+    @include gradient(bottom, $gradientColor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    max-width: 670px;
+    margin: 0 auto;
+  }
+
+  &__description {
+    @include font-source-sans(20px, $colorLight, 300, 33px);
+    margin: 21px auto 0;
+    max-width: 822px;
+  }
+
+  &__fire {
+    margin-top: -300px;
+    max-width: 1290px;
+    width: 100%;
+  }
+
+  &__container {
+    @include flex;
+    margin-top: -300px;
+    gap: 144px;
+  }
+
+  &__icon {
+    @include flex;
+    @include font-source-sans(16px, $colorLight, 300, 24px);
+    gap: 10px;
+    text-align: start;
+
+    &_firsticon {
+      max-width: 210px;
+
+      &::before {
+        content: '';
+        background: url('../../images/fire.svg') no-repeat center/cover;
+        width: 46px;
+        height: 30px;
+      }
+    }
+
+    &_secondicon {
+      max-width: 210px;
+      &::before {
+        content: '';
+        background: url('../../images/h2o.png') no-repeat center/cover;
+        width: 46px;
+        height: 30px;
+      }
+    }
+
+    &_thirdicon {
+      max-width: 310px;
+      &::before {
+        content: '';
+        background: url('../../images/close.svg') no-repeat center/cover;
+        width: 46px;
+        height: 30px;
+      }
+    }
+  }
+}

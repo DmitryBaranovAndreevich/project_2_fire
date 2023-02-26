@@ -1,0 +1,44 @@
+.sectionVideo {
+  padding: 100px 0;
+
+  &__title {
+    @include font-source-sans(30px, $colorLight, 300, 44px);
+  }
+
+  &__mainButton {
+    @include font-source-sans(18px, $mainbackgroundColorDark, 500, 30px);
+    padding: 14px 63px;
+    background: $textColorActive;
+    border: none;
+  }
+
+  &__subTitle {
+    @include font-source-sans(40px, $textColorDark1, 250, 55px);
+    @include gradient(right, $gradientColor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    margin: 90px 0 50px;
+
+    &_noMarginTop {
+      margin-top: 10px;
+    }
+
+    &_noMarginBottom {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 42px;
+  }
+
+  &__video {
+    max-width: 370px;
+    max-height: 267px;
+    width: 100%;
+    @include responsive-ratio(370px, 267px, true);
+    background: $mainVideoColor;
+  }
+}
