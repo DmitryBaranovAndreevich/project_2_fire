@@ -83,4 +83,13 @@
       opacity: $contentOpacity;
     }
   }
+
+  @include laptop {
+    flex-direction: column;
+
+    &__list {
+      flex-wrap: nowrap;
+      max-height: 600px;
+    }
+  }
 }

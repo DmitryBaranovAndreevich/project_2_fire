@@ -66,4 +66,23 @@
       }
     }
   }
+
+  @include tablets {
+    &__fire {
+      display: none;
+    }
+
+    &__container {
+      margin-top: 30px;
+      gap: 10px;
+    }
+  }
+
+  @include phones {
+    padding-top: 20px;
+
+    &__container {
+      flex-direction: column;
+    }
+  }
 }

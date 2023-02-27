@@ -38,4 +38,8 @@
       }
     }
   }
+
+  @include phones {
+    padding: 20px;
+  }
 }

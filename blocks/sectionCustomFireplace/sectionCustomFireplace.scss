@@ -177,4 +177,22 @@
       opacity: $contentOpacity;
     }
   }
+
+  @include desctop {
+    &__mainContainer {
+      flex-direction: column;
+    }
+  }
+
+  @include tablets {
+    &__checkboxContainer {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    &__bottomContainer {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
 }

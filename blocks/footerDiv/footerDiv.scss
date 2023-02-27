@@ -101,4 +101,13 @@
     height: 1px;
     border-top: 1px solid #232323;
   }
+
+  @include tablets {
+    &__container, &__bottomContainer ,&__bottomWrapper{
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+  }
 }

@@ -37,7 +37,7 @@
       top: -50px;
       right: 33px;
       content: '';
-      background: url("../../images/icon1.svg") no-repeat center/cover;
+      background: url('../../images/icon1.svg') no-repeat center/cover;
       width: 30px;
       height: 30px;
     }
@@ -49,14 +49,21 @@
     max-width: 120px;
     text-align: center;
 
-     &:after {
+    &:after {
       position: absolute;
       top: -50px;
       right: 33px;
       content: '';
-      background: url("../../images/icon2.svg") no-repeat center/cover;
+      background: url('../../images/icon2.svg') no-repeat center/cover;
       width: 30px;
       height: 30px;
+    }
+  }
+
+  @include phones {
+    text-align: center;
+    &__title {
+      font-size: 24px;
     }
   }
 }
