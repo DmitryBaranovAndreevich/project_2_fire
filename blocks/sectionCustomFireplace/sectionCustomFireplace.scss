@@ -1,0 +1,180 @@
+.sectionCustomFireplace {
+  &__title {
+    @include font-source-sans(40px, transparent, 250, 55px);
+    @include gradient(right, $gradientColor);
+    letter-spacing: 3px;
+  }
+
+  &__mainContainer {
+    @include flex;
+    gap: 84px;
+    margin-top: 67px;
+  }
+
+  &__rightColumn {
+    flex-grow: 1;
+  }
+
+  &__image {
+    max-width: 533px;
+    max-height: 374px;
+    width: 200%;
+    height: 100%;
+  }
+
+  &__container {
+    @include flex;
+    gap: 196px;
+    margin-top: 68px;
+  }
+
+  &__state {
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    @include font-source-sans(12px, rgba($colorLight, 0.5), 500, 25px);
+    margin: 0;
+
+    &_position_left:after {
+      content: '6.5 м';
+      @include font-source-sans(24px, $colorLight, 400, 25px);
+      margin: 0;
+      margin-top: 15px;
+    }
+
+    &_position_right:after {
+      content: '';
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #b8542a;
+      margin-top: 15px;
+    }
+  }
+
+  &__slaiderContinerTitle {
+    @include font-source-sans(10px, rgba($colorLight, 0.5), 500, 25px);
+    text-align: start;
+    margin: 0;
+  }
+
+  &__slaiderContainer {
+    display: flex;
+    align-items: center;
+    gap: 39px;
+    margin: 25px 0;
+  }
+
+  &__sliderNum {
+    @include font-source-sans(18px, $colorLight, 500, 25px);
+    margin: 0;
+  }
+
+  &__slider {
+    max-width: 400px;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px;
+    background: $textColorActive;
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 30px;
+      height: 30px;
+      background: $textColorActive;
+    }
+  }
+
+  &__carusel {
+    @include flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 29px;
+    margin: 25px 0;
+  }
+
+  &__sliderSection {
+    width: 247px;
+    height: 59px;
+    background: url('../../images/carusel.jpg') no-repeat center/cover;
+  }
+
+  &__sliderButton {
+    @include mainTransition;
+    width: 10px;
+    height: 18px;
+    border: none;
+    color: $textColorActive;
+    background: transparent;
+    font-size: 34px;
+    line-height: 0;
+  }
+
+  &__checkboxContainer {
+    @include flex;
+    justify-content: flex-start;
+    gap: 165px;
+  }
+
+  &__column {
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__label {
+    @include font-source-sans(14px, $colorLight, 500, 30px);
+    @include mainTransition;
+    @include flex;
+    justify-content: space-between;
+    max-width: 250px;
+    width: 200%;
+
+    &:after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border: 1px solid #ceb787;
+    }
+  }
+
+  &__checkbox {
+    width: 0;
+    height: 0;
+
+    &:checked + .sectionCustomFireplace__label::after {
+      background: url('../../images/plus.svg') no-repeat center/cover;
+    }
+  }
+
+  &__bottomContainer {
+    @include flex;
+    margin-top: 60px;
+    justify-content: space-between;
+  }
+
+  &__price {
+    @include flex;
+    @include font-source-sans(36px, $textColorActive, 500, 25px);
+    flex-direction: column;
+    margin: 0;
+    gap: 15px;
+
+    &::before {
+      @include font-source-sans(12px, rgba($colorLight, 0.5), 500, 25px);
+      content: 'стоимость';
+    }
+  }
+
+  &__bottomButton {
+    @include mainTransition;
+    @include font-source-sans(18px, $mainVideoColor, 500, 30px);
+    padding: 14px 57px;
+    background: $textColorActive;
+
+    &:hover {
+      opacity: $contentOpacity;
+    }
+  }
+}

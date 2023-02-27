@@ -1,0 +1,104 @@
+.footerDiv {
+  max-width: $max-width;
+  margin: 0 auto;
+
+  &__title {
+    @include font-source-sans(40px, transparent, 250, 55px);
+    @include gradient(right, $gradientColor);
+    letter-spacing: 3px;
+    text-align: start;
+    margin: 0 0 60px;
+  }
+
+  &__container {
+    @include flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__text {
+    @include flex;
+    @include font-source-sans(22px, $colorLight, 300, 36px);
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+
+    &_active {
+      color: $textColorActive;
+    }
+
+    &_bigSize {
+      @include font-source-sans(36px, $textColorDark2, 250, 33px);
+    }
+
+    &:before {
+      @include font-source-sans(14px, $textColorDark2, 300, 36px);
+    }
+
+    &_first:before {
+      content: 'WhatsApp';
+    }
+
+    &_second {
+      position: relative;
+      right: 80px;
+
+      &:before {
+        content: 'Почта';
+      }
+    }
+
+    &_third:before {
+      content: 'Телефон';
+    }
+
+    &_fourth:before {
+      content: 'Телеграмм';
+    }
+
+    &_fifth {
+      max-width: 270px;
+      text-align: start;
+      &:before {
+        content: 'Наш адрес';
+      }
+    }
+  }
+
+  &__button {
+    @include font-source-sans(18px, $textColorDark2, 500, 30px);
+    @include mainTransition;
+    box-sizing: border-box;
+    padding: 14px 13px;
+    background: transparent;
+    border: 1px solid #ceb787;
+
+    &:hover {
+      opacity: $contentOpacity;
+    }
+  }
+
+  &__bottomContainer {
+    @include flex;
+    justify-content: space-between;
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+
+  &__bottomWrapper {
+    @include flex;
+    max-width: 50%;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__text1 {
+    @include font-source-sans(14px, $textColorDark2, 300, 36px);
+  }
+
+  &__line {
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #232323;
+  }
+}

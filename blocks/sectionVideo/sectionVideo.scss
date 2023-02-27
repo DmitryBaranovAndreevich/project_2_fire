@@ -13,10 +13,8 @@
   }
 
   &__subTitle {
-    @include font-source-sans(40px, $textColorDark1, 250, 55px);
+    @include font-source-sans(40px, transparent, 250, 55px);
     @include gradient(right, $gradientColor);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     letter-spacing: 3px;
     margin: 90px 0 50px;
 

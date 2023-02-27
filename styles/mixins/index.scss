@@ -88,6 +88,8 @@
   background: -moz-linear-gradient($direction, $list);
   background: -o-linear-gradient($direction, $list);
   background: linear-gradient($direction, $list);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @mixin noDotNoMargin {

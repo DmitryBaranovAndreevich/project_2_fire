@@ -12,13 +12,5 @@
 @import "../blocks/smartFirePlace/smartFirePlace.scss";
 @import "../blocks/description/description.scss";
 @import "../blocks/sectionVideo/sectionVideo.scss";
-
-body {
-  text-align: center;
-}
-
-#footerDiv {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
+@import "../blocks/sectionCustomFireplace/sectionCustomFireplace.scss";
+@import "../blocks/footerDiv/footerDiv.scss";
