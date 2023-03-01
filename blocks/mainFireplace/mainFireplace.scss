@@ -40,7 +40,7 @@
 
       &::before {
         content: '';
-        background: url('../../images/fire.svg') no-repeat center/cover;
+        background: url('../images/fire.svg') no-repeat center/cover;
         width: 46px;
         height: 30px;
       }
@@ -50,7 +50,7 @@
       max-width: 210px;
       &::before {
         content: '';
-        background: url('../../images/h2o.png') no-repeat center/cover;
+        background: url('../images/h2o.png') no-repeat center/cover;
         width: 46px;
         height: 30px;
       }
@@ -60,7 +60,7 @@
       max-width: 310px;
       &::before {
         content: '';
-        background: url('../../images/close.svg') no-repeat center/cover;
+        background: url('../images/close.svg') no-repeat center/cover;
         width: 46px;
         height: 30px;
       }

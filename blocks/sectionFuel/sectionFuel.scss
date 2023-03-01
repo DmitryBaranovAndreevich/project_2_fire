@@ -1,6 +1,6 @@
 .sectionFuel {
   padding: 100px;
-  background: url("../../images/img1.png") no-repeat right/ 600px 650px;
+  background: url("../images/img1.png") no-repeat right/ 600px 650px;
   text-align: start;
 
   &__title {
@@ -34,7 +34,7 @@
         content: "";
         width: 165px;
         height: 30px;
-        background: url("../../images/tandem.svg") no-repeat center/cover;
+        background: url("../images/tandem.svg") no-repeat center/cover;
       }
     }
   }

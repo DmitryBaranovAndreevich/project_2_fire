@@ -307,11 +307,11 @@ template {
 
 @font-face {
   font-family: 'LabGrotesque';
-  src: url(../../LabGrotesque/LabGrotesque-Light.woff) format("woff");
+  src: url(../LabGrotesque/LabGrotesque-Light.woff) format("woff");
   font-weight: 300; }
 @font-face {
   font-family: 'LabGrotesque';
-  src: url(../../LabGrotesque/LabGrotesque-Regular.woff) format("woff");
+  src: url(../LabGrotesque/LabGrotesque-Regular.woff) format("woff");
   font-weight: 400; }
 @font-face {
   font-family: 'LabGrotesque';
@@ -389,7 +389,7 @@ template {
       content: '';
       width: 17px;
       height: 17px;
-      background: url("../../images/phone.svg") no-repeat center/cover; }
+      background: url("../images/phone.svg") no-repeat center/cover; }
     .headerDiv__button:hover {
       opacity: 0.6; }
   @media screen and (max-width: 750px) {
@@ -415,7 +415,7 @@ template {
   margin: 0 auto; }
 
 .sectionTitle {
-  background: url("../../images/kamin.svg") no-repeat right/700px 429px;
+  background: url("../images/kamin.svg") no-repeat right/700px 429px;
   text-align: start;
   padding: 10px 0 100px; }
   .sectionTitle__title {
@@ -464,7 +464,7 @@ template {
       top: -50px;
       right: 33px;
       content: '';
-      background: url("../../images/icon1.svg") no-repeat center/cover;
+      background: url("../images/icon1.svg") no-repeat center/cover;
       width: 30px;
       height: 30px; }
   .sectionTitle__secondtIcon {
@@ -481,7 +481,7 @@ template {
       top: -50px;
       right: 33px;
       content: '';
-      background: url("../../images/icon2.svg") no-repeat center/cover;
+      background: url("../images/icon2.svg") no-repeat center/cover;
       width: 30px;
       height: 30px; }
   @media screen and (max-width: 550px) {
@@ -542,21 +542,21 @@ template {
       max-width: 210px; }
       .mainFireplace__icon_firsticon::before {
         content: '';
-        background: url("../../images/fire.svg") no-repeat center/cover;
+        background: url("../images/fire.svg") no-repeat center/cover;
         width: 46px;
         height: 30px; }
     .mainFireplace__icon_secondicon {
       max-width: 210px; }
       .mainFireplace__icon_secondicon::before {
         content: '';
-        background: url("../../images/h2o.png") no-repeat center/cover;
+        background: url("../images/h2o.png") no-repeat center/cover;
         width: 46px;
         height: 30px; }
     .mainFireplace__icon_thirdicon {
       max-width: 310px; }
       .mainFireplace__icon_thirdicon::before {
         content: '';
-        background: url("../../images/close.svg") no-repeat center/cover;
+        background: url("../images/close.svg") no-repeat center/cover;
         width: 46px;
         height: 30px; }
   @media screen and (max-width: 750px) {
@@ -573,7 +573,7 @@ template {
 
 .sectionFuel {
   padding: 100px;
-  background: url("../../images/img1.png") no-repeat right/600px 650px;
+  background: url("../images/img1.png") no-repeat right/600px 650px;
   text-align: start; }
   .sectionFuel__title {
     font-family: 'LabGrotesque', Helvetica, Arial, sans-serif;
@@ -611,7 +611,7 @@ template {
         content: "";
         width: 165px;
         height: 30px;
-        background: url("../../images/tandem.svg") no-repeat center/cover; }
+        background: url("../images/tandem.svg") no-repeat center/cover; }
   @media screen and (max-width: 550px) {
     .sectionFuel {
       padding: 20px; } }
@@ -886,7 +886,7 @@ template {
 .sectionCustomFireplace__sliderSection {
   width: 247px;
   height: 59px;
-  background: url("../../images/carusel.jpg") no-repeat center/cover; }
+  background: url("../images/carusel.jpg") no-repeat center/cover; }
 .sectionCustomFireplace__sliderButton {
   transition: 0.2s;
   cursor: pointer;
@@ -932,7 +932,7 @@ template {
   width: 0;
   height: 0; }
   .sectionCustomFireplace__checkbox:checked + .sectionCustomFireplace__label::after {
-    background: url("../../images/plus.svg") no-repeat center/cover; }
+    background: url("../images/plus.svg") no-repeat center/cover; }
 .sectionCustomFireplace__bottomContainer {
   display: flex;
   justify-content: center;
