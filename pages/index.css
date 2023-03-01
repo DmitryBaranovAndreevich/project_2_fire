@@ -875,17 +875,6 @@ template {
   font-weight: 500;
   line-height: 25px;
   margin: 0; }
-.sectionCustomFireplace__slider {
-  max-width: 400px;
-  -webkit-appearance: none;
-  width: 100%;
-  height: 2px;
-  background: #FFCF7A; }
-  .sectionCustomFireplace__slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 30px;
-    height: 30px;
-    background: #FFCF7A; }
 .sectionCustomFireplace__carusel {
   display: flex;
   justify-content: center;
@@ -991,6 +980,97 @@ template {
   .sectionCustomFireplace__bottomContainer {
     flex-direction: column;
     gap: 10px; } }
+
+/*generated with Input range slider CSS style generator (version 20211225)
+https://toughengineer.github.io/demo/slider-styler*/
+input[type=range].styled-slider {
+  height: 2.2em;
+  background: #000000;
+  -webkit-appearance: none; }
+
+/*progress support*/
+input[type=range].styled-slider.slider-progress {
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--value) - var(--min)) / var(--range));
+  --sx: calc(0.5 * 30px + var(--ratio) * (100% - 30px)); }
+
+input[type=range].styled-slider:focus {
+  outline: none; }
+
+/*webkit*/
+input[type=range].styled-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  background: #FFCF7A;
+  border: none;
+  box-shadow: 0 0 2px black;
+  margin-top: calc(6px * 0.5 - 30px * 0.5); }
+
+input[type=range].styled-slider::-webkit-slider-runnable-track {
+  height: 6px;
+  border: none;
+  border-radius: 0.5em;
+  background: #949494;
+  box-shadow: none; }
+
+input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
+  background: linear-gradient(#FFCF7A, #FFCF7A) 0/var(--sx) 100% no-repeat, #949494; }
+
+/*mozilla*/
+input[type=range].styled-slider::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  background: #FFCF7A;
+  border: none;
+  box-shadow: 0 0 2px black; }
+
+input[type=range].styled-slider::-moz-range-track {
+  height: 6px;
+  border: none;
+  border-radius: 0.5em;
+  background: #949494;
+  box-shadow: none; }
+
+input[type=range].styled-slider.slider-progress::-moz-range-track {
+  background: linear-gradient(#FFCF7A, #FFCF7A) 0/var(--sx) 100% no-repeat, #949494; }
+
+/*ms*/
+input[type=range].styled-slider::-ms-fill-upper {
+  background: transparent;
+  border-color: transparent; }
+
+input[type=range].styled-slider::-ms-fill-lower {
+  background: transparent;
+  border-color: transparent; }
+
+input[type=range].styled-slider::-ms-thumb {
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  background: #FFCF7A;
+  border: none;
+  box-shadow: 0 0 2px black;
+  margin-top: 0;
+  box-sizing: border-box; }
+
+input[type=range].styled-slider::-ms-track {
+  height: 6px;
+  border-radius: 0.5em;
+  background: #949494;
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box; }
+
+input[type=range].styled-slider.slider-progress::-ms-fill-lower {
+  height: 6px;
+  border-radius: 0.5em 0 0 0.5em;
+  margin: -undefined 0 -undefined -undefined;
+  background: #FFCF7A;
+  border: none;
+  border-right-width: 0; }
 
 .footerDiv {
   max-width: 1194px;

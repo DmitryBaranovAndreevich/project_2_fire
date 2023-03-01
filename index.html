@@ -174,7 +174,7 @@
               <p class="sectionCustomFireplace__slaiderContinerTitle">Выберите длину</p>
               <div class="sectionCustomFireplace__slaiderContainer">
                 <p class="sectionCustomFireplace__sliderNum">0.5м</p>
-                <input type="range" class="sectionCustomFireplace__slider" id="size" min="0.5" max="10" step="0.5">
+                <input type="range" class="styled-slider slider-progress" style="width: 100%; --value:5; --min:0.5; --max:10;">
                 <p class="sectionCustomFireplace__sliderNum">10м</p>
               </div>
               <p class="sectionCustomFireplace__slaiderContinerTitle">Лицевая панель</p>
@@ -244,6 +244,14 @@
       <p class="footerDiv__text1">Пользовательское соглашение</p>
     </div>
   </div>
+  <script>
+    for (let e of document.querySelectorAll('input[type="range"].slider-progress')) {
+        e.style.setProperty('--value', e.value);
+        e.style.setProperty('--min', e.min == '' ? '0' : e.min);
+        e.style.setProperty('--max', e.max == '' ? '100' : e.max);
+        e.addEventListener('input', () => e.style.setProperty('--value', e.value));
+      }
+  </script>
 </body>
 
 </html>
