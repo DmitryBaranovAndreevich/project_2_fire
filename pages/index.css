@@ -981,14 +981,11 @@ template {
     flex-direction: column;
     gap: 10px; } }
 
-/*generated with Input range slider CSS style generator (version 20211225)
-https://toughengineer.github.io/demo/slider-styler*/
 input[type=range].styled-slider {
   height: 2.2em;
   background: #000000;
   -webkit-appearance: none; }
 
-/*progress support*/
 input[type=range].styled-slider.slider-progress {
   --range: calc(var(--max) - var(--min));
   --ratio: calc((var(--value) - var(--min)) / var(--range));
@@ -997,7 +994,6 @@ input[type=range].styled-slider.slider-progress {
 input[type=range].styled-slider:focus {
   outline: none; }
 
-/*webkit*/
 input[type=range].styled-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 30px;
