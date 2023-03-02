@@ -307,7 +307,7 @@ template {
 
 @font-face {
   font-family: 'LabGrotesque';
-  src: url("../../LabGrotesque/LabGrotesque-Thin.woff") format("woff");
+  src: url("../LabGrotesque/LabGrotesque-Thin.woff") format("woff");
   font-weight: 250; }
 @font-face {
   font-family: 'LabGrotesque';
@@ -315,11 +315,11 @@ template {
   font-weight: 300; }
 @font-face {
   font-family: 'LabGrotesque';
-  src: url("../../LabGrotesque/LabGrotesque-Regular.woff") format("woff");
+  src: url("../LabGrotesque/LabGrotesque-Regular.woff") format("woff");
   font-weight: 400; }
 @font-face {
   font-family: 'LabGrotesque';
-  src: url("../../LabGrotesque/LabGrotesque-Medium.woff") format("woff");
+  src: url("../LabGrotesque/LabGrotesque-Medium.woff") format("woff");
   font-weight: 500; }
 .bodyDiv {
   width: 100%;
